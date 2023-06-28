@@ -29,7 +29,7 @@ static void CheckError(OSStatus error, const char *operation) {
     } else
         sprintf(errorString, "%d", (int)error); // No, format it as an integer
     fprintf(stderr, "Error: %s (%s)\n", operation, errorString);
-    exit(1);
+    //exit(1);
 }
 
 void startConvert(ExtAudioConverterSettings *settings) {
